@@ -20,7 +20,7 @@ alpha = [
   "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
 ]
 
-//For UPPERCASE conversions
+//Data space for UPPERCASE conversions
 upperAlpha = [];
 
 //The return statement ends the execution of a function
@@ -52,7 +52,79 @@ function generatePassword() {
     confirmNum = confirm("Would you like your password to have NUMBERS?");
     confirmSpec = confirm("Would you like your password to have SPECIAL CHARACTERS?");
   }
+
+  //The start of a the main IF ELSE statement
+
+  if (!confirmLower && !confirmUpper && !confirmNum && !confirmSpec) {
+    alert("Sorry! You gotta choose something!");
+  }
+
+  //The concat() method concatenates the string arguments to the calling string and returns a new string.
+
+  //4 confirms create 1 else if
+
+  else if (confirmLower && confirmUpper && confirmNum && confirmSpec) {
+    userPref = alpha.concat(alphaX, number, specCharacter);
+  }
+
+  //3 confirms create 4 else if
+
+  else if (confirmLower && confirmNum && confirmSpec) {
+    userPref = alpha.concat(number, specCharacter);
+  }
+  else if (confirmUpper && confirmNum && confirmSpec) {
+    userPref = alphaX.concat(number, specCharacter);
+  }
+  else if (confirmLower && confirmUpper && confirmNum) {
+    userPref = alpha.concat(alphaX, number);
+  }
+  else if (confirmLower && confirmUpper && confirmSpec) {
+    userPref = alpha.concat(alphaX, specCharacter);
+  }
+
+  //2 confirms create 6 if else
+
+  else if (confirmLower && confirmNum) {
+    userPref = alpha.concat(number);
+  }
+  else if (confirmUpper && confirmNum) {
+    userPref = alphaX.concat(number);
+  }
+  else if (confirmSpec && confirmLower) {
+    userPref = specCharacter.concat(alpha);
+  }
+  else if (confirmSpec && confirmUpper) {
+    userPref = specCharacter.concat(alphaX);
+  }
+  else if (confirmSpec && confirmNum) {
+    userPref = specCharacter.concat(number);
+  }
+  else if (confirmLower && confirmUpper) {
+    userPref = alpha.concat(alphaX);
+  }
+
+  //1 confirm creates 4 else if
+
+  else if (confirmUpper) {
+    userPref = upperAlpha.concat(alphaX);
+  }
+  else if (confirmLower) {
+    userPref = alpha;
+  }
+  else if (confirmNum) {
+    userPref = number;
+  }
+  else if (confirmSpec) {
+    userPref = specCharacter;
+  }
+
+  // STOPPED HERE JAKE
+
+
+
 }
+
+
 
 
 
