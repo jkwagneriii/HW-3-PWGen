@@ -42,6 +42,9 @@ function generatePassword() {
     prompt("Please choose a password length between 8 - 50 characters."));
   if (!passLength) {
     alert("For one to recieve a password, one must specify a length!");
+  } 
+  else if (passLength < 8 || passLength > 50) {
+    alert("I said BETWEEN 8 - 50 characters! Try again.");
   }
 }
 
