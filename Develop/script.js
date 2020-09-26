@@ -30,7 +30,20 @@ upperAlpha = [];
 var toUpper = function (x) {
   return x.toUpperCase();
 }
-alphaX = alpha.map(toUpper);
+alphaX = alpha.map(toUpper); 
+
+//User preferences will result in the final password display
+var userPref;
+
+//Master generate function
+function generatePassword() {
+//The parseInt function converts its first argument to a string, parses that string, then returns an integer
+  passLength = parseInt(
+    prompt("Please choose a password length between 8 - 50 characters."));
+  if (!passLength) {
+    alert("For one to recieve a password, one must specify a length!");
+  }
+}
 
 
 
