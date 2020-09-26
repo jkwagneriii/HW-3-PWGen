@@ -46,6 +46,12 @@ function generatePassword() {
   else if (passLength < 8 || passLength > 50) {
     alert("I said BETWEEN 8 - 50 characters! Try again.");
   }
+  else {
+    confirmLower = confirm("Would you like your password to have LOWERCASE LETTERS?");
+    confirmUpper = confirm("Would you like your password to have UPPERCASE LETTERS?");
+    confirmNum = confirm("Would you like your password to have NUMBERS?");
+    confirmSpec = confirm("Would you like your password to have SPECIAL CHARACTERS?");
+  }
 }
 
 
