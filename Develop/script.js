@@ -1,3 +1,9 @@
+// Possible User Variable
+var passLength;
+var confirmLower;
+var confirmUpper;
+var confirmNum;
+var confirmSpec;
 
 
 
