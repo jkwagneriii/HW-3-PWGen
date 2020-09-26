@@ -20,6 +20,18 @@ alpha = [
   "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
 ]
 
+//For UPPERCASE conversions
+upperAlpha = [];
+
+//The return statement ends the execution of a function
+//Convert to UPPERCASE
+//The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+//Variable for uppercase alphabetical characters
+var toUpper = function (x) {
+  return x.toUpperCase();
+}
+alphaX = alpha.map(toUpper);
+
 
 
 
