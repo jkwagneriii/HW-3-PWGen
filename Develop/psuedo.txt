@@ -1,0 +1,10 @@
+Basic understanding of what is supposed to happen when I load the web page :
+1. Once I press the Generate Password button I should recieve a PROMPT asking me to choose the length of the password (between 8-50 characters) (Also is this a function?)
+2. IF I click cancel and and recieve a false value, I should receive an ALERT stating that I must decide on a length
+3. ELSE IF will check the argument of the characters being between 8-50. So if that is false, I should recieve an ALERT saying that the range must be between 8 and 50 characters.
+4. ELSE? ELSE IF? Not sure yet. But the next step of this IF statement will be the 4 CONFIRMS. They will ask if you want uppercase, lowercase, numbers, and/or special characters. 
+5. IF all of those variables are false, I should recieve an ALERT that I have to choose some sort of character for the button to work.
+6. Then I think there will be a bunch of ELSE IF statements that work through each possible combo of user preferences. Like each ELSE IF statement can use && to check if multiple arguments are true. If they are true, then I can use .concat to add different variables together as a string back inside of the user variables (I think thats the right way to think through that.)
+7. All of that user preference data then has to go into another variable for the password itself. Like we have to make another storage section. I believe this will require a FOR LOOP and the math.random to make random decisions from the previous ELSE IF statements. 
+8. I remember that using .push can add data back into a variable, so that will probably be how the final data gets added into the box on the screen.
+9. Ideally I'll figure out how to make it automatically copy to the clipboard. 
