@@ -118,7 +118,10 @@ function generatePassword() {
     userPref = specCharacter;
   }
 
-  // STOPPED HERE JAKE
+  for (var i = 0; i < passLength; i++) {
+    var userPick = userPref [Math.floor (Math.random() * userPref.length)];
+    password.push(userPick);
+  }
 
 
 
