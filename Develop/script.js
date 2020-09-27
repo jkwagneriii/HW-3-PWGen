@@ -118,6 +118,7 @@ function generatePassword() {
     userPref = specCharacter;
   }
 
+  //Array needed to input the data coming from userPref
   var password = [];
 
   for (var i = 0; i < passLength; i++) {
@@ -126,7 +127,7 @@ function generatePassword() {
   }
   var passData = password.join ("");
   userData(passData);
-  return password;
+  return passData;
 
 
 }
@@ -134,12 +135,6 @@ function generatePassword() {
 function userData(passData) {
   document.getElementById("password").textContent = passData;
 }
-
-
-
-
-
-
 
 
 // Assignment Code
