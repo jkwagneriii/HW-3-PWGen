@@ -118,15 +118,22 @@ function generatePassword() {
     userPref = specCharacter;
   }
 
+  var password = [];
+
   for (var i = 0; i < passLength; i++) {
     var userPick = userPref [Math.floor (Math.random() * userPref.length)];
     password.push(userPick);
   }
-
+  var passData = password.join ("");
+  userData(passData);
+  return password;
 
 
 }
 
+function userData(passData) {
+  document.getElementById("password").textContent = passData;
+}
 
 
 
